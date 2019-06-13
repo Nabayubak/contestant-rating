@@ -107,7 +107,6 @@ E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Twitter.xml
 E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 E:\Nabayubak\Nabayubak\Nabayubak\obj\Debug\Nabayubak.dll
 E:\Nabayubak\Nabayubak\Nabayubak\obj\Debug\Nabayubak.pdb
-E:\Nabayubak\Nabayubak\Nabayubak\obj\Debug\Nabayubak.csprojResolveAssemblyReference.cache
 D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Nabayubak.dll.config
 D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Nabayubak.dll
 D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Nabayubak.pdb
@@ -330,3 +329,6 @@ E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\obj\Debug\Nabayubak.csproj
 E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\obj\Debug\Nabayubak.csproj.CopyComplete
 E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\obj\Debug\Nabayubak.dll
 E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\obj\Debug\Nabayubak.pdb
+E:\Nabayubak\Nabayubak\Nabayubak\obj\Debug\Nabayubak.csprojAssemblyReference.cache
+E:\Nabayubak\Nabayubak\Nabayubak\obj\Debug\Nabayubak.csproj.CoreCompileInputs.cache
+E:\Nabayubak\Nabayubak\Nabayubak\obj\Debug\Nabayubak.csproj.CopyComplete
