@@ -1,0 +1,42 @@
+﻿
+
+@{
+    ViewBag.Title = "Index";
+    var districtlist = (List<Nabayubak.Models.District>)ViewBag.DistrictList;
+    var ContestantList = (List<Nabayubak.Models.Naba1>)ViewBag.ContestantList;
+    //var ok= (List<Nabayubak.Models.Naba1>)ViewBag.ok;
+}
+
+<h2>Contestant list</h2>
+<div>
+    <p>
+        @Html.ActionLink("Create New", "Create12")
+    </p>
+</div>
+<div>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Full Name </th>
+                <th>Date of Birth </th>
+                <th>District</th>
+                <th>Gender</th>
+             </tr>
+        </thead>
+        <tbody id="BodyContestantList">
+            @foreach (var item in ContestantList)
+            {
+                <tr id="@item.ConstantId">
+                    <td>@item.FullName</td>
+                    <td>@item.DateOfBirth</td>
+                    <td>@item.District</td>
+                    <td>@item.Gender</td>
+                  <td> @Html.ActionLink("Edit", "Edit", new {id =item.ConstantId})| @Html.ActionLink("Delete", "Delete", new{id=item.ConstantId})</td>
+                    
+                </tr>
+            }
+        </tbody>
+     </table>
+    
+</div>
+

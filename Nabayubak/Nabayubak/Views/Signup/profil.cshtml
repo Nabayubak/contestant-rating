@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "profil";
+}
+
+<h2>profil</h2>
+<button id="btnLogout">Logout</button>
+<script>
+    $(document).ready(function () {
+        $("#btnLogout").click(function () {
+            document.location = '@Url.Action("Loginpage", "Signup")';
+        });
+    });
+</script>

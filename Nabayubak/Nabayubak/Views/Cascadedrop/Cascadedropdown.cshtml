@@ -1,0 +1,387 @@
+﻿@model IEnumerable<Nabayubak.Models.CSMAP>
+           @{
+    
+    var Classlist = (List<Nabayubak.Models.CSMAP>)ViewBag.List1;
+    var Sectionlist = (List<Nabayubak.Models.CSMAP>)ViewBag.List2;
+    var Maplist = (List<Nabayubak.Models.CSMAP>)ViewBag.List3;
+}
+        <head>
+            <title></title>
+            <style type="text/css">
+                        * {
+                            box-sizing: border-box;
+                        }
+
+                        .style1 {
+                            width: 100%;
+                            margin-top: 10%;
+                        }
+
+                        .style2 {
+                            font-size: xx-large;
+                            font-weight: bold;
+                            color: #CC0000;
+                        }
+
+                        .style3 {
+                            width: 271px;
+                            height: 156px;
+                        }
+
+                        .btn {
+                            border-radius: 2px;
+                            margin: 2px;
+                            background: green;
+                            color: white;
+                            width: 97%;
+                            padding: 12px;
+                            border: 0;
+                            font-size: 12px;
+                        }
+
+                        .btnview {
+                            border-radius: 2px;
+                            margin: 2px;
+                            background: green;
+                            color: white;
+                            width: 50%;
+                            padding: 12px;
+                            border: 0;
+                            font-size: 15px;
+                        }
+                    
+                        .column {
+                            float: left;
+                        }
+
+                        .left {
+                            margin-top: 5%;
+                            width: 15%;
+                        }
+
+                        .right {
+                            margin-left: 2%;
+                            margin-top: 5%;
+                            width: 33%;
+                        }
+
+
+                        .middle {
+                            width: 50%;
+                        }
+
+                        .row::after {
+                            content: "";
+                            display: table;
+                            clear: both;
+                        }
+
+                        .btnAD {
+                            color: white;
+                            background: green;
+                            width: 100%;
+                        }
+
+                        .btnDelet {
+                            color: red;
+                        }
+                input[type="text"] {
+                    width: 75px;
+                    font-size: 12px;
+                }
+                .btnsectionlist{
+                    width:auto;
+                    font-size:12px;
+                }
+                .btnedit{
+                    width:40px;
+                }
+                   
+                
+            </style>
+        </head>
+        <body>
+            <div class="row">
+                <div class="column left">
+                    <div> <button class="btn" id="btnclassedit" value="">Class List Add/Remove</button></div>
+                    <div><button class="btn" id="btnsectionedit" value="">Section List Add/Remove</button></div>
+                    <div><button class="btn" id="btnmapclasssection" value="">Map List Add/Remove</button></div>
+
+                </div>
+
+                <div class="column middle">
+                    <form>
+
+
+                        <table align="center" class="style1" style="border: thin solid #008080">
+                            <tr>
+                                <td class="style2"
+                                    style="text-align: center; border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #008080;">
+                                    Cascading DropDownList Example
+                                </td>
+                            </tr>
+
+                            <td style="text-align: center">
+                                <table class="style3">
+                                    <tr>
+                                        <td style="text-align: right; font-weight: 700">
+                                            Select Class :
+                                        </td>
+                                        <td style="text-align: left">
+                                            <select class="dropdown" name="" id="classdropdown">
+                                                <option value="" selected="" disabled="">---Select Class---</option>
+                                                @foreach (var item in Classlist)
+                                                {
+                                                    <option value="@item.Classid">@item.Class</option>
+                                                }
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align: right; font-weight: 700">
+                                            Select section :
+                                        </td>
+                                        <td style="text-align: left">
+                                            <select class="dropdown" id="sectiondropdown" disabled="disabled">
+                                                <option selected="" value="0" disabled="disabled">--Select Section--</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+
+
+                                </table>
+                                <button class="btnview" id="btnview12" value="">View</button>
+                            </td>
+
+                        </table>
+
+
+                    </form>
+                </div>
+                <div class="column right" id="sectionlist" hidden>
+                    <div>
+                        <table class="table-bordered" id="tblsection">
+                            <thead>
+                                <tr>
+                                    <th>S.N</th>
+                                    <th width="50%">Section List</th>
+                                    <th><button class="btnAD">ADD</button></th>
+
+                                </tr>
+                            </thead>
+                            @foreach (var item in Sectionlist)
+                            {
+
+                                <tr>
+                                    <td>@item.Sectionid </td>
+                                    <td>@item.Section</td>
+                                    <td>
+                                        <button class="btnDelet">Remove</button>
+                                    </td>
+                                </tr>
+                            }
+
+                        </table>
+                    </div>
+                </div>
+                <div class="column right" id="classlist" hidden>
+                    <div>
+                        <table class="table-bordered" id="tblclass">
+                            <thead>
+                                <tr>
+                                    <th>S.N</th>
+                                    <th width="50%">Class List</th>
+                                    <th><button class="btnAD">ADD</button></th>
+
+                                </tr>
+                            </thead>
+                            @foreach (var item in Classlist)
+                            {
+
+                                <tr>
+                                    <td>@item.Classid </td>
+                                    <td>
+                                        @item.Class
+                                        @*@Html.DisplayFor(ModelItem => item.Class)*@
+                                    </td>
+                                    <td>
+                                        <button class="btnDelet">Remove</button>
+                                    </td>
+                                </tr>
+                            }
+
+                        </table>
+                    </div>
+                </div>
+                <div class="column right" id="Maplist" hidden>
+                    <div>
+                        <table class="table-bordered" id="tblmap">
+                            <thead>
+                                <tr>
+                                    <th>S.N</th>
+                                    <th>Class List</th>
+                                    <th>Section</th>
+                                    <th>List</th>
+                                </tr>
+                            </thead>
+                            @foreach (var item in Classlist)
+                            {
+
+                                <tr>
+                                    <td>@item.Classid </td>
+                                    <td>
+                                        @item.Class
+                                    </td>
+                                    <td id="td1">
+                                        
+                                        <button class="btnsectionlist" value="@item.Classid">Section list</button>
+
+                                    </td>
+                                    <td><input type="text" id="@item.Classid" value="" readonly/><button value="@item.Classid" class="btnedit">Edit</button></td>
+                                </tr>
+                            }
+
+                        </table>
+                    </div>
+                </div>
+                <div>
+                    <div>
+        <label>Class : </label>
+       
+   </div>
+
+                    <div>
+                        <label>Section : </label>
+                        @foreach (var item in Sectionlist)
+                        { 
+                            <input type="checkbox"name="" class="" value=@item.Sectionid id="seccheck" /> @item.Section
+                        }
+                    </div>
+                </div>
+
+            </div>
+        </body>
+        <script>
+            $(document).ready(function () {
+                $("#classdropdown").on('change', function () {
+                    $("#sectiondropdown").prop('disabled', false);
+                    var classid = $("#classdropdown").val();
+
+                    //console.log(classid)
+                    $.ajax({
+                        url: "/Cascadedrop/Getsectionlist",
+                        type: "post",
+                        dataType: "json",
+                        data: { classid: classid },
+                        success: function (evt) {
+
+                            //console.log(evt)
+                            var Sectiondropdown = $("#sectiondropdown");
+
+                            Sectiondropdown.empty().append('<option selected="selected" disabled = "disabled" value="0">--Select Section--</option>');
+                            for (var i = 0; i < evt.length; i++) {
+                                var opt = new Option(evt[i].Section, evt[i].Sectionid);
+                                $('#sectiondropdown').append(opt);
+
+
+                            }
+
+                        }
+
+
+                    });
+                });
+
+
+                $('#btnview12').click(function () {
+                    var Classtext = $('#classdropdown :selected').text();
+                    var Sectiontext = $('#sectiondropdown :selected').text();
+
+
+
+
+
+                    if ($("#sectiondropdown").val() > 0) {
+                        alert("CLASS => " + Classtext + ", SECTION => " + Sectiontext);
+
+                    }
+                    else {
+                        alert('Please select Class and section')
+                        return false;
+                    }
+
+                })
+                $('#btnclassedit').click(function (event) {
+                    $("#sectionlist").hide();
+                    $("#Maplist").hide("fast");
+                    event.stopPropagation();
+                    $("#classlist").toggle("fast");
+                    $("#classlist").on("click", function (event) {
+                        event.stopPropagation();
+                    });
+                    
+                    
+                   
+                });
+                
+                $('#btnsectionedit').click(function (event) {
+                    $("#classlist").hide();
+                    $("#Maplist").hide("fast");
+                    event.stopPropagation();
+                    $("#sectionlist").toggle("fast");
+                    $("#sectionlist").on("click", function (event) {
+                        event.stopPropagation();
+                    });
+                   
+                });
+                $(document).on("click", function () {
+                    $("#classlist").hide("fast");
+                    $("#sectionlist").hide("fast");
+                    $("#Maplist").hide("fast");
+                });
+              
+                $(".btnsectionlist").click(function () {
+                    var Classid = $(this).val();
+                    console.log(Classid)
+                    $.ajax({
+                        type: "POST",
+                        dataType: "json",
+                        url: "/Cascadedrop/Sectionlistbtn",
+                        data: { 'Classid': Classid },
+                        success: function (obj) {
+                            console.log(obj)
+                            var id1 = '#';
+                            var id2 = Classid;
+                            var txtId = id1.concat(id2);
+                           
+                            var sec = "";
+                            for (var i = 0; i < obj.length; i++) {
+                                //$('#td1').append(''+ obj[i].Section, ' ' +'');
+
+                                sec += obj[i].Section+',';
+                            }
+                            sec = sec.substr(0, sec.lastIndexOf(","));
+                            $('' + txtId + '').val(sec);
+                        },
+                        
+                    });
+                });
+                $('#btnmapclasssection').click(function (event) {
+                    $("#classlist").hide();
+                    $("#sectionlist").hide();
+                    event.stopPropagation();
+                    $("#Maplist").toggle("fast");
+                    $("#Maplist").on("click", function (event) {
+                        event.stopPropagation();
+                    });
+
+                });
+                $(".btnedit").click(function () {
+                    var data = $(this).val();
+                    console.log(data)
+                });
+            });
+
+
+        </script>
+ 

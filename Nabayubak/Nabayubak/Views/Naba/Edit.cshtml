@@ -1,0 +1,40 @@
+﻿@model Nabayubak.Models.Contestant
+@{
+    ViewBag.Title = "Edit";
+    //var Districtslist = (List<Nabayubak.Models.District>)ViewBag.Districtslist;
+}
+
+<h2>Edit</h2>
+<div>
+    <form method="post">
+        <div>@Html.LabelFor(model=>model.Firstname)<br />   @Html.EditorFor(model => model.Firstname)</div>
+        <div>@Html.LabelFor(model=>model.Lastname)<br />    @Html.EditorFor(model=> model.Lastname)</div>
+        <div>@Html.LabelFor(model=>model.DateOfBirth)<br /> @Html.EditorFor(model=> model.DateOfBirth)</div>
+        <div>@Html.LabelFor(model=>model.IsActive)<br />    @Html.EditorFor(model=>model.IsActive)</div>
+        @Html.DropDownList("Districtslist")
+        <div>
+
+            <div>Gender:<br /> </div>
+            <div>
+                <input type="radio" value="Male" name="Gender" style="width:10px;" id="rdbMale" /> Male
+            </div>
+            <div>
+                <input type="radio" style="width:10px" name="Gender" value="Female" id="rdbFemale" /> Female
+            </div>
+            <div><br /> <input type="submit" value="Edit"/></div>
+        </div>
+    </form>
+</div>
+
+<div>
+    @Html.ActionLink("Back To List", "Index")
+</div>
+<script>
+    $(document).ready(function () {
+        $(function () {
+            $("#Date").datepicker();
+
+        });
+    });
+</script>
+

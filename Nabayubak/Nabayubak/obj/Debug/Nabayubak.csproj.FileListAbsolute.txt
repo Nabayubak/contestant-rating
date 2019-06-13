@@ -1,0 +1,332 @@
+D:\Projects\Nabayubak\Nabayubak\bin\Nabayubak.dll.config
+D:\Projects\Nabayubak\Nabayubak\bin\Nabayubak.dll
+D:\Projects\Nabayubak\Nabayubak\bin\Nabayubak.pdb
+D:\Projects\Nabayubak\Nabayubak\bin\Antlr3.Runtime.dll
+D:\Projects\Nabayubak\Nabayubak\bin\EntityFramework.dll
+D:\Projects\Nabayubak\Nabayubak\bin\EntityFramework.SqlServer.dll
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.Owin.dll
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.dll
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Google.dll
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Nabayubak\Nabayubak\bin\Newtonsoft.Json.dll
+D:\Projects\Nabayubak\Nabayubak\bin\Owin.dll
+D:\Projects\Nabayubak\Nabayubak\bin\System.Web.Helpers.dll
+D:\Projects\Nabayubak\Nabayubak\bin\System.Web.Mvc.dll
+D:\Projects\Nabayubak\Nabayubak\bin\System.Web.Optimization.dll
+D:\Projects\Nabayubak\Nabayubak\bin\System.Web.Razor.dll
+D:\Projects\Nabayubak\Nabayubak\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Nabayubak\Nabayubak\bin\System.Web.WebPages.dll
+D:\Projects\Nabayubak\Nabayubak\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Nabayubak\Nabayubak\bin\WebGrease.dll
+D:\Projects\Nabayubak\Nabayubak\bin\System.Web.Helpers.xml
+D:\Projects\Nabayubak\Nabayubak\bin\System.Web.Mvc.xml
+D:\Projects\Nabayubak\Nabayubak\bin\System.Web.Optimization.xml
+D:\Projects\Nabayubak\Nabayubak\bin\System.Web.Razor.xml
+D:\Projects\Nabayubak\Nabayubak\bin\System.Web.WebPages.xml
+D:\Projects\Nabayubak\Nabayubak\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Nabayubak\Nabayubak\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Nabayubak\Nabayubak\bin\Newtonsoft.Json.xml
+D:\Projects\Nabayubak\Nabayubak\bin\Antlr3.Runtime.pdb
+D:\Projects\Nabayubak\Nabayubak\bin\EntityFramework.xml
+D:\Projects\Nabayubak\Nabayubak\bin\EntityFramework.SqlServer.xml
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.Owin.xml
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.xml
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Google.xml
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Projects\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Projects\Nabayubak\Nabayubak\obj\Debug\Nabayubak.csprojResolveAssemblyReference.cache
+D:\Projects\Nabayubak\Nabayubak\obj\Debug\Nabayubak.dll
+D:\Projects\Nabayubak\Nabayubak\obj\Debug\Nabayubak.pdb
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Nabayubak.dll.config
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Nabayubak.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Nabayubak.pdb
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Antlr3.Runtime.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\EntityFramework.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\EntityFramework.SqlServer.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Google.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Web.Infrastructure.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Newtonsoft.Json.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Owin.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Helpers.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Mvc.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Optimization.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Razor.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.WebPages.Deployment.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.WebPages.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.WebPages.Razor.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\WebGrease.dll
+E:\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Helpers.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Mvc.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Optimization.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Razor.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.WebPages.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.WebPages.Deployment.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.WebPages.Razor.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Newtonsoft.Json.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Antlr3.Runtime.pdb
+E:\Nabayubak\Nabayubak\Nabayubak\bin\EntityFramework.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\EntityFramework.SqlServer.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Google.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Nabayubak\Nabayubak\Nabayubak\obj\Debug\Nabayubak.dll
+E:\Nabayubak\Nabayubak\Nabayubak\obj\Debug\Nabayubak.pdb
+E:\Nabayubak\Nabayubak\Nabayubak\obj\Debug\Nabayubak.csprojResolveAssemblyReference.cache
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Nabayubak.dll.config
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Nabayubak.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Nabayubak.pdb
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Antlr3.Runtime.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\EntityFramework.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\EntityFramework.SqlServer.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Core.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Cookies.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Facebook.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Google.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.OAuth.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Twitter.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Web.Infrastructure.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Newtonsoft.Json.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Owin.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Helpers.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Mvc.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Optimization.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Razor.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.WebPages.Deployment.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.WebPages.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.WebPages.Razor.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\WebGrease.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Helpers.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Mvc.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Optimization.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Razor.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.WebPages.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.WebPages.Deployment.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.WebPages.Razor.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Newtonsoft.Json.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Antlr3.Runtime.pdb
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\EntityFramework.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\EntityFramework.SqlServer.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Core.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Facebook.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Cookies.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.OAuth.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Google.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Twitter.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\obj\Debug\Nabayubak.csprojResolveAssemblyReference.cache
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\obj\Debug\Nabayubak.dll
+D:\mobfrom\Nabayubak\Nabayubak\Nabayubak\obj\Debug\Nabayubak.pdb
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Nabayubak.dll.config
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Nabayubak.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Nabayubak.pdb
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Antlr3.Runtime.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\EntityFramework.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\EntityFramework.SqlServer.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Google.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Web.Infrastructure.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Newtonsoft.Json.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Owin.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Helpers.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Mvc.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Optimization.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Razor.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.WebPages.Deployment.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.WebPages.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.WebPages.Razor.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\WebGrease.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Helpers.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Mvc.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Optimization.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.Razor.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.WebPages.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.WebPages.Deployment.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\System.Web.WebPages.Razor.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Newtonsoft.Json.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Antlr3.Runtime.pdb
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\EntityFramework.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\EntityFramework.SqlServer.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Google.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\obj\Debug\Nabayubak.csprojResolveAssemblyReference.cache
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\obj\Debug\Nabayubak.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\Nabayubak\obj\Debug\Nabayubak.pdb
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Nabayubak.dll.config
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Nabayubak.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Nabayubak.pdb
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Antlr3.Runtime.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\EntityFramework.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\EntityFramework.SqlServer.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.Owin.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Google.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.Web.Infrastructure.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Newtonsoft.Json.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Owin.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\System.Web.Helpers.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\System.Web.Mvc.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\System.Web.Optimization.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\System.Web.Razor.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\System.Web.WebPages.Deployment.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\System.Web.WebPages.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\System.Web.WebPages.Razor.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\WebGrease.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\System.Web.Helpers.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\System.Web.Mvc.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\System.Web.Optimization.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\System.Web.Razor.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\System.Web.WebPages.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\System.Web.WebPages.Deployment.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\System.Web.WebPages.Razor.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Newtonsoft.Json.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Antlr3.Runtime.pdb
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\EntityFramework.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\EntityFramework.SqlServer.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.Owin.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Google.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Contestant Rating app\Nabayubak\Nabayubak\obj\Debug\Nabayubak.csprojResolveAssemblyReference.cache
+D:\Contestant Rating app\Nabayubak\Nabayubak\obj\Debug\Nabayubak.dll
+D:\Contestant Rating app\Nabayubak\Nabayubak\obj\Debug\Nabayubak.pdb
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Nabayubak.dll.config
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Nabayubak.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Nabayubak.pdb
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Antlr3.Runtime.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\EntityFramework.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\EntityFramework.SqlServer.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Core.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.Owin.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Cookies.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Facebook.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Google.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.OAuth.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Twitter.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.Web.Infrastructure.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Newtonsoft.Json.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Owin.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\System.Web.Helpers.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\System.Web.Mvc.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\System.Web.Optimization.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\System.Web.Razor.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\System.Web.WebPages.Deployment.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\System.Web.WebPages.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\System.Web.WebPages.Razor.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\WebGrease.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\System.Web.Helpers.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\System.Web.Mvc.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\System.Web.Optimization.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\System.Web.Razor.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\System.Web.WebPages.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\System.Web.WebPages.Deployment.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\System.Web.WebPages.Razor.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Newtonsoft.Json.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Antlr3.Runtime.pdb
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\EntityFramework.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\EntityFramework.SqlServer.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Core.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.Owin.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Facebook.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Cookies.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.OAuth.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Google.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.Twitter.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\obj\Debug\Nabayubak.csprojAssemblyReference.cache
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\obj\Debug\Nabayubak.csproj.CoreCompileInputs.cache
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\obj\Debug\Nabayubak.csproj.CopyComplete
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\obj\Debug\Nabayubak.dll
+E:\Nabayubak-20190606T163223Z-001\Nabayubak\Nabayubak\obj\Debug\Nabayubak.pdb

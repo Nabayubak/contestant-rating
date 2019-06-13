@@ -1,0 +1,157 @@
+﻿@model IEnumerable<Nabayubak.Models.Naba2>  
+@{
+    ViewBag.Title = "ConstantRating";
+    
+    }
+
+
+<h2>ConstantRating</h2>
+    <div>
+    <p>
+        @using (Html.BeginForm("ConstantRating", "Naba", FormMethod.Post))
+        {
+            <b>Search by:</b>
+            @Html.RadioButton("searchBy", "Name",new{id="Name"})<text>Name</text> 
+            @Html.RadioButton("searchBy", "Gender", new {id="Gender"}) <text>Gender</text>
+    <select id="DropDown" name="Gender" style="display: none">
+        <option  value="null">-</option>
+
+        <option value="Male">Male</option>
+
+        <option value="Female">Female</option>
+</select>
+             @Html.TextBox("search", "", new { id = "oo", style = "display: none" }) <br />
+            
+            <div> <b>IsActive:</b>
+                <input type="checkbox"  name="IsActive" value="true" id="IsActive"/>
+        <input type="hidden" name="IsActive" value="false"
+            </div><br />
+         <b>Rated date Range</b>  
+     <tr>
+            <lable>From Date</lable>
+         <input type="text" id="Fromdate" name="Fromdate"class="form-control datepicker"/>
+            <lable>To Date</lable>
+         <input type="text" id="Todate" name="Todate" class="form-control datepicker"/>
+     </tr>
+        <input type="submit" value="Search" />
+        }
+            
+        </p>
+    </div>
+           
+<div>
+<table class="table table-bordered">
+    <tr>
+        <th>@Html.DisplayNameFor(model =>model.FullName)</th>
+        <th>@Html.DisplayNameFor(model =>model.Gender)</th>
+        <th>@Html.DisplayNameFor(model =>model.IsActive)</th>
+        <th>@Html.DisplayNameFor(model =>model.Dateofbirth)</th>
+        <th>@Html.DisplayNameFor(model => model.District)</th>
+        <th>@Html.DisplayNameFor(model => model.Averagerating) | @Html.DisplayNameFor(model => model.Rating)</th>
+        <th>@Html.DisplayNameFor(model => model.Ratercount)</th>
+
+    </tr>
+    @foreach (var item in Model ) { 
+        <tr>
+            <td> @Html.DisplayFor(ModelItem =>item.FullName)</td>
+            <td>@Html.DisplayFor(modelItem =>item.Gender)</td>
+            <td>@Html.DisplayFor(modelItem =>item.IsActive)</td>
+            <td> @Html.DisplayFor(ModelItem => item.Dateofbirth)</td>
+            <td> @Html.DisplayFor(ModelItem => item.District)</td>
+            <td> @Html.DisplayFor(ModelItem => item.Averagerating) |
+             @Html.ActionLink("Rate Constant", "Rating", new { id = item.ConstantId })
+                
+            @*<button>
+                <a href="~/Home/Download_Excel_File" />
+            </button>*@
+            @*<input type="button" value="From(1-5)" new{ id=item.ConstantId } o="location.href='@Url.Action("From(1-5)", "Rating")'" />*@
+            </td>
+            <td>@Html.DisplayFor(ModelItem => item.Ratercount) </td>
+        </tr>
+                                }
+</table>
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        $('input[type=text]').each(function () {
+            $(this).val('');
+        });
+
+        $("input:radio").attr("checked", false);
+        
+     
+
+        $(function () {
+            $("#Fromdate").datepicker();
+            $("#Todate").datepicker();
+        });
+
+             
+        $("#Gender").change(function() {
+            //if (this.value == true)
+            if ($('#Gender').is(':checked'))
+            {
+                $('#oo').attr("hidden", "true");
+                $("#DropDown").show();
+            }
+            else {
+                $('#oo').removeAttr('hidden')
+                $("#DropDown").hide();
+            }
+        });
+        $("#Name").change(function () {
+            //if (this.value == true)
+            if ($('#Gender').is(':checked'))
+            { 
+                $('#oo').attr("hidden", "true");
+                $("#DropDown").show();
+            }
+            else
+            {
+                $('#oo').removeAttr('hidden')
+                $("#DropDown").hide();
+            }
+        });
+        $("#Name").change(function () {
+            if ($('#Name').is(':checked')) {
+                $('#DropDown').attr("hidden", "true");
+                $("#oo").show();
+            }
+            else {
+                $('#DropDown').removeAttr('hidden')
+                $("#oo").hide();
+            }
+        });
+        $("#Gender").change(function () {
+            if ($('#Name').is(':checked')) {
+                $('#DropDown').attr("hidden", "true");
+                $("#oo").show();
+            }
+            else {
+                $('DropDown').removeAttr('hidden')
+                $("#oo").hide();
+            }
+        });
+        //$("#IsActive").change(function (){
+        //    if ($('#IsActive').is(':checked'))
+        //    {
+        //        $('#IsActive').attr('value', true);
+        //    } 
+        //    else 
+
+        //    {
+        //        $('#IsActive').attr('value', false);
+        //    }
+        //});
+        //function Clear() {
+        //    $('#oo').val("");
+        //    $('#DropDown').val("");
+        //    $('#IsActive').val("");
+        //};
+      
+    });
+</script>
+
+    

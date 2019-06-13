@@ -1,0 +1,391 @@
+﻿@model IEnumerable<Nabayubak.Models.NabaT12>
+@{
+    ViewBag.Title = "Shift1";
+    var N = (List<Nabayubak.Models.NabaT12>)ViewBag.N;
+    var A = (List<Nabayubak.Models.NabaT12>)ViewBag.A;
+}
+
+
+<head>
+    <style>
+        .header {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+        }
+        .column {
+            float: left;
+            padding: 15px;
+            height: auto;
+            
+        }
+
+            .column.side {
+                width: 39%;
+               
+            }
+
+
+            .column.middle {
+                
+                width: 22%;
+              
+            }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Shift1</h2>
+    </div>
+    <div class="row">
+        <div class="column side">
+            <table class="table-bordered" width="85%" id="tblData1">
+
+                <thead>
+                    <tr>
+
+                        <th>Name1</th>
+
+                    </tr>
+                </thead>
+
+
+                @foreach (var item in N)
+                {
+
+                    <tr>
+
+                        <td>
+                            <input type="checkbox" name="1" class="chk1" value="@item.Id" id="k" />
+
+                            @Html.DisplayFor(ModelItem => item.Name1)
+                        </td>
+
+                    </tr>
+                }
+
+            </table>
+        </div>
+
+        @*<input type="button" value="Transfer1" id="idbutton1">||<input type="button" value="Transfer2" id="idbutton2">*@
+        <div class="column middle">
+            <button id="idbutton1" value="Transfer">
+                <div>
+                    <img id="imgsrc1" src="~/Photos/left.png" width="2000" height="2000" style="height:20px; width:20px" />
+                    <div>
+            </button>
+            <button id="idbutton2" value="Transfer1">
+                <div>
+                    <img id="imgsrc2" src="~/Photos/right.png" width="2000" height="2000" style="height:20px; width:20px" />
+                    <div>
+            </button>
+        </div>
+
+        <div class="column side">
+            <table class="table-bordered" width="100%" id="tblData2">
+
+                <thead>
+                    <tr>
+                        <th>Name2</th>
+
+                    </tr>
+                </thead>
+
+
+                @foreach (var item in A)
+                {
+
+                    <tr>
+
+                        <td>
+                            <input type="checkbox"name="2" class="chk2" value=@item.Id id="kk" />
+
+                            @Html.DisplayFor(ModelItem => item.Name2)
+                        </td>
+
+                    </tr>
+                }
+
+
+            </table>
+
+        </div>
+ 
+    </div>
+</body>
+<footer></footer>
+
+
+
+
+
+
+
+
+
+
+
+<div>
+    <script>
+        $(document).ready(function () {
+            $("#idbutton1").click(function () {
+                button1();
+                //$.ajax({
+                //    type: 'post',
+                //    url: "/NabaCC/GetAlltable2/",
+                //    data: null,
+                //    dataType: "json",
+                //    success: function (evt) {
+                        
+                //        $('#tblData2 tbody tr').remove();
+                //        console.log(evt)
+
+                //        $.each(evt, function () {
+                //            var body = $('#tblData2 tbody');
+                //            var tr = $('<tr></tr>');
+                //            var td = $('<td><input type="checkbox" name="2" class="chk2" value=' + this.Id + ' id ="kk" /> ' + this.Name2 + '</td>');
+                //            tr.append(td);
+                //            body.append(tr);
+
+                //        })
+                //    }
+
+                //});
+            });
+            $("#idbutton2").click(function () {
+                button2();
+                //$.ajax({
+                //    type: 'post',
+                //    url: "/NabaCC/GetAlltable1/",
+                //    data: null,
+                //    dataType: "json",
+                //    success: function (evt) {
+                //        $('#tblData1 tbody tr').remove();
+                //        console.log(evt)
+
+                //        $.each(evt, function () {
+                //            var body = $('#tblData1 tbody');
+                //            var tr = $('<tr></tr>');
+                //            var td = $('<td><input type="checkbox" name="1" class="chk1" value=' + this.Id + ' id ="kk" /> ' + this.Name1 + '</td>');
+                //            tr.append(td);
+                //            body.append(tr);
+
+                //        })
+                //    }
+
+                //});
+            });
+            function button2() {
+
+                var chkArray = new Array()
+                
+                   
+                   
+                    
+                $(".chk1:checked").each(function ()
+
+                {
+                    chkArray.push($(this).val());
+                });
+                var selected = chkArray.join(',');
+                if (selected.length > 0) {
+                   // alert("You have selected " + chkArray);
+                    $.ajax({
+                        type: 'post',
+                        url: '/NabaCC/button2',
+                        data: { 'id': chkArray },
+                        traditional: true,
+                        dataType: "json",
+                        success: function (evt) {
+                            $("#tblData1 tr td input[type='checkbox']").each(function () {
+                                if ($(this).is(":checked"))
+                                {
+                                    $(this).parent().remove();
+                                }
+                                
+                            });
+                            $("#tblData2 tbody tr").remove();
+                            var body = $('#tblData2 tbody');
+                            console.log(evt)
+
+                            $.each(evt, function () {
+                                
+                                var tr = "";
+                                var td = "";
+                                var name2id = this.Name2Id;
+                                var id = this.Id;
+                                var name2 = this.Name2;
+
+                                if (checkValue(name2id, chkArray) == 'Exist') {
+
+                                    tr = $("<tr class='lightgray'></tr>");
+                                    td = $('<td><input type="checkbox" name="2" class="chk2" value=' + id + ' id ="kk" /> ' + name2 + '</td>');
+
+                                    tr.append(td);
+                                    body.append(tr);
+                                }
+                                else {
+
+                                    tr = $("<tr class=''></tr>");
+                                    td = $('<td><input type="checkbox" name="2" class="chk2" value=' + id + ' id ="kk" /> ' + name2 + '</td>');
+
+                                    tr.append(td);
+                                    body.append(tr);
+                                }
+
+                                setTimeout(function () {
+                                    $('#tblData2 tbody tr.lightgray').removeClass('lightgray')
+                                }, 3000)
+
+
+
+
+
+                            })
+                        },
+                        error: function () { alert('error'); }
+
+                    });
+                } else {
+                    alert("Please at least check one of the checkbox");
+                }
+                    
+            }
+            function button1() {
+
+               
+                var chkArray = [];// new Array() 
+
+
+                $(".chk2:checked").each(function () {
+                    chkArray.push($(this).val());
+                });  
+                var selected = chkArray.join(',');
+                if (selected.length > 0) {
+                   // alert("You have selected " + chkArray);
+                    $.ajax({
+                        type: 'post',
+                        url: '/NabaCC/button1',
+                        data: { 'id': chkArray },
+                        traditional: true,
+                        dataType: "json",
+                        success: function (evt) {
+                            $("#tblData2 tr td input[type='checkbox']").each(function () {
+                                if ($(this).is(":checked")) {
+                                    $(this).parent().remove();
+                                    
+
+                                }
+
+                            });
+
+                           
+                            $("#tblData1 tbody tr").remove(); 
+                            var body = $('#tblData1 tbody');
+                            console.log(evt) 
+                            $.each(evt, function () {
+                                
+                                var tr = "";
+                                var td = "";
+                                var name1id = this.Name1Id;
+                                var id = this.Id;
+                                var name1 = this.Name1;
+
+                                if (checkValue(name1id, chkArray) == 'Exist') {
+
+                                    tr = $("<tr class='lightblue'></tr>");
+                                    td = $('<td><input type="checkbox" name="1" class="chk1" value=' + id + ' id ="k" /> ' + name1 +'</td>');
+
+                                    tr.append(td);
+                                    body.append(tr);
+                                }
+                                else
+                                {
+
+                                    tr = $("<tr class=''></tr>");
+                                    td = $('<td><input type="checkbox" name="1" class="chk1" value=' + id + ' id ="k" /> ' + name1 + '</td>');
+
+                                    tr.append(td);
+                                    body.append(tr);
+                                }
+                                 
+                                    setTimeout(function () {
+                                        $('#tblData1 tbody tr.lightblue').removeClass('lightblue')
+                                    }, 3000)
+                                
+
+                                
+
+                                    
+                            })
+                            
+                           
+                        },
+                        error: function () { alert('error'); }
+
+                    });
+                } else {
+                    alert("Please at least check one of the checkbox");
+                }
+                
+            }
+            function checkValue(value, arr) {
+                var status = 'Not exist';
+
+                for (var i = 0; i < arr.length; i++) {
+                    var name = arr[i];
+                    if (name == value) {
+                        status = 'Exist';
+                        break;
+                    }
+                }
+
+                return status;
+            }
+            $('#tblData1').on('click', "tbody tr td input[type='checkbox']", function () {
+                if ($(this).is(":checked")) {
+                    //alert("table 1")
+                    $(this).parent().addClass("lightblue");
+                    $('input.chk2').not(this).prop('disabled', true);
+                    $('#idbutton1').prop('disabled', true);
+                    $('#idbutton2').removeAttr('disabled');
+                    //alert($(this).val())
+                }
+
+                else {
+                    $(this).parent().removeClass("lightblue");
+                    $('input.chk2').not(this).prop('disabled', false);
+                    $('#idbutton1').prop('disabled', false);
+                }
+            });
+            $('#tblData2').on('click', "tbody tr td input[type='checkbox']", function () {
+                if ($(this).is(":checked")) {
+                   // alert("table 2")
+                    $(this).parent().addClass("lightgray");
+                    $('input.chk1').not(this).prop('disabled', true);
+                    $('#idbutton2').prop('disabled', true)
+                    $('#idbutton1').removeAttr('disabled');
+                   
+                    //alert($(this).val())
+                } else {
+                    $(this).parent().removeClass("lightgray");
+                    $('input.chk1').not(this).prop('disabled', false);
+                    $('#idbutton2').prop('disabled', false);
+
+                }
+            });
+
+
+        });
+
+
+    </script>
+</div>

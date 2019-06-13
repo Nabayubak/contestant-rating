@@ -1,0 +1,164 @@
+﻿
+@model Nabayubak.Models.Contestant
+
+@{
+    ViewBag.Title = "Create";
+    var Districtslist = (List<Nabayubak.Models.District>)ViewBag.Districtslist;
+}
+<div>
+    <h2>Form</h2>
+    <input type="text" value="InsertMode" hidden id="Mode" />
+    <input type="text" value="0" hidden id="ContestantID" />
+</div>
+
+
+    <div> First Name:<br /> <input type="text" name="FirstName" id="txtFirstName" /></div>
+    <div> Second Name:<br />  <input type="text" name="LastName" id="txtLastName" /></div>
+    <div> Date of Birth: <br />  <input type="date" name="DateofBirth" id="txtDOB" /></div>
+    <div> IsActive:<br />  <input type="checkbox" name="IsActive" value="true" id="chkActive" />@*<input type="hidden" name="IsActive" value="false"></div>*@
+    <div>
+        District :<br /> <select class="form-control" name="DistrictId" id="DropDownDistrict">
+            <option value="0">--Select District--</option>
+            @foreach (var item in Districtslist)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+
+    </div>
+    <div>
+
+        <div>Gender:<br /> </div>
+        <div>
+            <input type="radio" value="Male" name="Gender" style="width:10px;" id="rdbMale" /> Male
+        </div>
+        <div>
+            <input type="radio" style="width:10px" name="Gender" value="Female" id="rdbFemale" /> Female
+        </div>
+    </div><br />
+    <div>
+        <img id="imgsrc" src="~/Photos/add.png" width="512" height="512" style="height:100px; width:100px" /><br />
+
+
+        <input id="imgid" style="width: 100px" type="file" name="filea" />
+    </div><br />
+    <div>
+        <button type="button" id="btnSaveContestant">Save Contestant</button>
+        <button type="button">Close</button>
+    </div>
+
+
+</div><br />
+
+<div>
+   <b> @Html.ActionLink("Back To List", "Index")</b>
+</div>
+<script>
+    $(document).ready(function () {
+        $('#btnSaveContestant').click(function () {
+
+
+
+            var mode = $('#Mode').val();
+            var contestantid = $('#ContestantID').val();
+            var firstname = $('#txtFirstName').val();
+            var lastname = $('#txtLastName').val();
+            var dob = $('#txtDOB').val();
+            var active = "";
+            if ($('#chkActive').is(':checked'))
+            { active = true; }
+            else
+            { active = false; }
+            var district = $('#DropDownDistrict').val();
+            var gender = "";
+            if ($('#rdbMale').is(':checked'))
+            { gender = $('#rdbMale').val(); }
+            else
+            { gender = $('#rdbFemale').val(); }
+            //var address = $('#txtAddress').val();
+            var alldata = {
+                'mode': mode,
+                'contestantid': contestantid,
+                'firstname': firstname,
+                'lastname': lastname,
+                'dob': dob,
+                'active': active,
+                'district': district,
+                'gender': gender,
+                //'address': address
+
+            };
+            if ($('#txtFirstName').val().trim().length == 0)
+            { $("#spanFirstName").html("Please Enter First Name").show(); }
+            if ($('#txtLastName').val().trim().length == 0)
+            { $("#spanLastName").html("Please Enter Last Name").show(); }
+            if ($('#txtDOB').val().trim().length == 0)
+            { $("#spanDOB").html("Please Select Date").show(); }
+            if ($('#DropDownDistrict').val() == 0)
+            { $("#spanDistrict").html("Please Select District").show(); }
+                //if ($('#txtAddress').val().trim().length == 0)
+                //{ $("#spanAddress").html("Please Enter Address").show(); }
+
+
+            else {
+                $.ajax({
+                    type: "POST",
+                    url: "/Naba/Create2",
+                    data: alldata,
+
+                })
+                .success(function (obj) {
+                    alert("success")
+                });
+            };
+        });
+        $('#imgid').on('change', function () {
+            alert("add image");
+            readURL(this);
+        });
+        function Clear() {
+            var img = "/Photos/add.png";
+            $('#imgsrc').attr('src', img);
+        };
+        //file onload file read
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.readAsDataURL(input.files[0]);
+                reader.onload = function (e) {
+                    $('#imgsrc').attr('src', e.target.result);
+                    //alert(e.target.result);
+                    // console.log("n");
+                }
+            }
+        };
+        function SavePhoto(objt) {
+            $.each(objt, function () {
+                var data = new FormData();
+                var files = $("#imgid").get(0).files;
+
+                if (files.length > 0) {
+
+                    data.append("filea", files[0]);
+                    data.append("contestantid", this.contestantid);
+
+                }
+                var url = "/Naba/SavePhoto";
+                var ajaxRequest = $.ajax({
+                    type: "POST",
+                    url: "Naba/Create2",
+                    contentType: false,
+                    processData: false,
+                    data: data,
+
+                });
+            });
+        };
+        ////$(document.body).on('click', '#Consav', function () {
+        ////    alert("save image");
+        ////    SavePhoto();
+
+        //});
+
+    });
+</script>

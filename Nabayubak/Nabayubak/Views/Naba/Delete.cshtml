@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Nabayubak.Models.Naba2>  
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Are you sure?</h2>
+<form method="post">
+@foreach (var item in Model ) 
+{
+    
+        <div> <lable>Full Name : @Html.DisplayFor(ModelItem =>item.FullName)</lable></div>
+        <div><lable>Gender : @Html.DisplayFor(modelItem =>item.Gender)</lable></div>
+        <div><lable>IsActive : @Html.DisplayFor(modelItem =>item.IsActive)</lable></div>
+        <div><lable>Date of Birth : @Html.DisplayFor(ModelItem => item.Dateofbirth)</lable> </div>
+        <div> <lable>District : @Html.DisplayFor(ModelItem => item.District)</lable></div>
+    
+}
+    <div>
+        <input type="submit" value="Delete" id="btndelete" />| @*@Html.ActionLink("cancle", "Index")*@ <button type="button" id="btncancle">Cancle</button>
+    </div>
+
+</form>
+<script>
+    $(document).ready(function () {
+        $('#btndelete').click(function () {
+            document.location = '@Url.Action("Index", "Naba")';
+            { alert('Are you sure want to delete?'); }
+        });
+
+        $('#btncancle').click(function () {
+            document.location = '@Url.Action("Index", "Naba")';
+            { alert('Are you sure?'); }
+        });
+    });
+</script>

@@ -1,0 +1,90 @@
+﻿@model Nabayubak.Models.Contestant
+
+@{
+    ViewBag.Title = "Rating";
+}
+
+<h2>Rating</h2>
+
+    <div class="row">
+        <div>
+            <input type="text" id="Cid" hidden value="@Model.Id" />
+            <lable>Constant Fullname :</lable> @Html.DisplayFor(model => model.Firstname) @Html.DisplayFor(model => model.Lastname)
+</div>
+        
+
+
+    </div>
+    <div class="row">
+        <input type="radio" value="1" name="rbd" id="rdb1" />1
+        <input type="radio" value="2" name="rbd" id="rdb2" />2
+        <input type="radio" value="3" name="rbd" id="rdb3" />3
+        <input type="radio" value="4" name="rbd" id="rdb4" />4
+        <input type="radio" value="5" name="rbd" id="rdb5" />5
+        <br />
+        <button type="button" id="btnsave">Save</button> | <button type="button" id="btnclose">Close</button>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            //$(function () {
+            //    var name = $(this).attr('fullname');
+            //    var id = $(this).val();
+            //    $('#Cid').val(id);
+            //    $('#Cname').html(name);
+            //});
+
+            $("#btnsave").click(function () {
+                var id = $('#Cid').val();
+                var rate = "";
+                if ($('#rdb1').is(':checked'))
+                { rate = $('#rdb1').val(); }
+                else if ($('#rdb2').is(':checked'))
+                { rate = $('#rdb2').val(); }
+                else if ($('#rdb3').is(':checked'))
+                { rate = $('#rdb3').val(); }
+                else if ($('#rdb4').is(':checked'))
+                { rate = $('#rdb4').val(); }
+                else if ($('#rdb5').is(':checked'))
+                { rate = $('#rdb5').val(); }
+                else { rate = 0; }
+
+                if (rate == 0)
+                { alert('Please Select Rate.'); }
+                else
+                {
+                    console.log("id "+id+" rate "+rate)
+                    //alert(rate)
+                    $.ajax({
+                        type: 'POST',
+                        url: '/Naba/RateConstant',
+                        data: {'id':id,'rate':rate},
+                        success: function (obj) 
+                        {
+                            if (obj = "true")
+                            {
+
+                                alert(obj);
+                                window.location.href = '/naba/ConstantRating';
+                            }
+                        }
+                        //$.each(obj, function () {});
+
+
+                             });
+
+
+
+                };
+            });
+            $('#btnclose').click(function () {
+                document.location = '@Url.Action("ConstantRating", "Naba")';
+                { alert('Are you sure?'); }
+            });
+
+        });
+
+    </script>
+
+
+

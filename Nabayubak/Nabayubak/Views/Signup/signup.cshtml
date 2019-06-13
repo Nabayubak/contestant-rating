@@ -1,0 +1,260 @@
+﻿<style>
+    #background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    .blank-background {
+        background-color: lightgray;
+    }
+    .main-container {
+        font-family: 'Roboto', sans-serif;
+        text-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+        color: white;
+        top: 0;
+        right: 0;
+        opacity: 1;
+        z-index: 10;
+    }
+    #bottom, #bottom-left, #bottom-right, #center, #center-above, #center-below, #top-left, #top-right {
+        position: absolute;
+        z-index: 3;
+    }
+
+    #center, #center-above, #center-below {
+        display: block;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        text-align: center;
+        -webkit-transform: translate(-50%, -50%);
+    }
+    #bottom {
+        width: 50%;
+        bottom: 0;
+        left: 50%;
+        opacity: 1;
+        -webkit-transform: translateX(-50%);
+    }
+
+    #top-right {
+        top: 0;
+        right: 0;
+    }
+
+    #top-left {
+        top: 0;
+        left: 0;
+    }
+
+    #bottom-right {
+        bottom: 0;
+        right: 0;
+    }
+
+    #bottom-left {
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+    }
+
+    #center-above, #center-below {
+        left: 0;
+        top: 85.5%;
+        -webkit-transform: translate(0, 0);
+        text-align: center;
+    }
+
+    #center-above {
+        top: 0;
+        z-index: 1;
+    }
+
+    .signup-dialog {
+        display: inline-block;
+        padding: 16px;
+        background: black;
+        border-radius: 10px;
+        
+    }
+    .form-header {
+        background: green;
+        margin: -16px -16px 0;
+        padding: 16px;
+    }
+
+    .form-block {
+        padding: 8px 16px;
+    }
+  .B  {
+        width: 7%;
+        
+        
+    }
+  .Dbox{
+      width:70%;
+      height:25px;
+  }
+    .G {
+        width: 70%;
+        height: 25px;
+    }
+    .quote {
+        padding: 10px 0;
+        font-size: 20px;
+        width: 60%;
+        margin: auto;
+        
+    }
+    input[type="submit"] {
+        border-radius: 2px;
+        margin: 2px;
+        background: green;
+        color: white;
+        width: 100%;
+        padding: 12px;
+        border: 0;
+        font-size: 20px;
+    }
+
+        input[type="submit"]:hover {
+            transform: translateY(-1px);
+            box-shadow: 1px 1px grey;
+        }
+
+        input[type="submit"][disabled] {
+            background: grey;
+        }
+        .text{
+            color:black;
+        }
+    
+    }
+</style>
+<header>
+
+</header>
+<body>
+    <ul>
+        <li id="background" class="blank-background"></li>
+    </ul>
+    <div class="main-container">
+        <div class="top-left"></div>
+        <div class="top-right"></div>
+        <div id="center-above"></div>
+        <div id="center">
+            <form id="login-form" method="post">
+                <div class="signup-dialog">
+                    <div class="form-header">
+                        <h1>Sign Up</h1>
+                        <p>Please fill in this form to create an account.</p>
+                    </div>
+
+
+                    <div class="form-block">
+                        <label title="black"><b>First Name :</b></label>
+                        <input type="text" id="txtFirstname" placeholder="First Name" name="Firstname" value="" required>
+                    </div>
+                    <div class="form-block">
+                        <label><b>Last Name :</b></label>
+                        <input type="text" id="txtLastname" placeholder="Last Name" name="Lastname" value="" required>
+                    </div>
+                    <div class="form-block">
+                        <label><b>Username :</b></label>
+                        <input type="text"  id="txtUsername" placeholder="User Name" name="Username" minlength="2" maxlength="10" required>
+                    </div>
+                    <div class="form-block">
+                        <label><b>Password :</b></label>
+                        <input type="text" id="txtPassword" placeholder="Password" name="Password" minlength="6" maxlength="15" required>
+                    </div>
+                    <div class="form-block">
+                        <label><b>Birthday :</b></label>
+                        <input class="Dbox" type="date" name="Birthday" id="Birthday" />
+                    </div>
+
+                        @*<select class="Mbox" name="mm" id="dropdown" aria-required="true" required>
+                            <option value="" selected="" disabled="">Birth&nbsp;Month</option>
+                            <option value="1">January</option>
+                            <option value="2">February</option>
+                            <option value="3">March</option>
+                            <option value="4">April</option>
+                            <option value="5">May</option>
+                            <option value="6">June</option>
+                            <option value="7">July</option>
+                            <option value="8">August</option>
+                            <option value="9">September</option>
+                            <option value="10">October</option>
+                            <option value="11">November</option>
+                            <option value="12">December</option>
+                        </select>
+                        <input class="B" type="tel" pattern="[0-9-() ]*" id="usernamereg-day" name="dd" value="" aria-required="true" role="textbox" aria-multiline="false" placeholder="Day" aria-label="Birthday" minlength="1" maxlength="2" required>
+                        <input class="B" type="tel" pattern="[0-9-() ]*" id="usernamereg-year" name="yyyy" value="" aria-required="true" role="textbox" aria-multiline="false" placeholder="Year" aria-label="Birthday" minlength="4" maxlength="4" required>*@
+
+                    
+
+                    <div class="form-block">
+                        <label><b>Gender :</b></label>
+                        <select  class ="G" name="Gender" id="dropdown" aria-required="true" required>
+                            <option  value="" selected="" disabled="">Gender Option</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-block">
+                        @*<button id="btnsignup" type="button">Sign Up</button>*@
+                        <input id="Signup-submit" type="submit" value="Sign Up">
+                    </div>
+                </div>
+                    
+</form>
+        </div>
+        <div id="center-below">
+            <div class="quote">
+                <small><b class="text">Already have an account?</b> <button class="green" id="btnlogin"> login </button></small>
+            </div>
+        </div>
+        <div class="bottom-left"></div>
+        <div class="bottom-right"></div>
+        </div>
+</body>
+<script>
+    $(document).ready(function () {
+        $('#btnlogin').click(function () {
+            document.location = '@Url.Action("Loginpage", "Signup")';
+        });
+        $('#btnsignup').click(function () {
+            var Firstname = $('#txtFirstname').val();
+            var Lastname = $('#txtLastname').val();
+            var username = $('#txtUsername').val();
+            var Password = $('#txtPassword').val();
+            var Birthday = $('#Birthday').val();
+            var Gender = $('#dropdown').val();
+            var alldata = {
+                'Firstname' :Firstname,
+                'Lastname' :Lastname,
+             'username' :username,
+             'Password': Password,
+             //'Birthday':Birthday,
+            'Gender':Gender
+            }
+                $.ajax({
+                    type: 'post',
+                    url: '/Signup/signup',
+                    data: alldata,
+                    dataType: "json",
+                    success: function (evt) {
+                        alert('sucess')
+                        
+                    }
+                });
+            
+
+        });
+    });
+       
+     
+        
+   </script>

@@ -1,0 +1,102 @@
+﻿@model Nabayubak.Models.Contestant
+
+@{
+    ViewBag.Title = "Create";
+    var Districtslist = (List<Nabayubak.Models.District>)ViewBag.Districtslist;
+}
+
+<h2>Form</h2>
+<div>
+    <form method="post">
+        <div> First Name:<br /> <input type="text" name="FirstName" /></div>
+        <div> Second Name:<br />  <input type="text" name="LastName" /></div>
+        <div> Date of Birth: <br />  <input type="date"  name="DateofBirth" id="Date" /></div>
+        <div> IsActive:<br />  <input type="checkbox" name="IsActive" value="true"/><input type="hidden" name="IsActive" value="false"></div>
+       <div> District :<br /> <select class="form-control" name="DistrictId" id="DropDownDistrict">
+    <option value="0">--Select District--</option>
+    @foreach (var item in Districtslist)
+    {
+        <option value="@item.Id">@item.Name</option>
+    }
+</select>
+
+        </div>
+        <div>
+
+            <div>Gender:<br /> </div>
+            <div>
+                <input type="radio" value="Male" name="Gender" style="width:10px;" id="rdbMale" /> Male
+            </div>
+            <div>
+                <input type="radio" style="width:10px" name="Gender" value="Female" id="rdbFemale" /> Female
+            </div>
+            <div>
+                <img id="imgsrc" src="~/Photos/add.png" width="512" height="512" style="height:100px; width:100px" />
+                <div>
+                <div>
+                <input id="imgid" style="width: 100px" type="file" name="filea" />
+            </div>
+            <div><br /> <input type="submit" value="ADD" id="Consav" /></div>
+        </div>
+</form>
+</div>
+
+<div>
+    @Html.ActionLink("Back To List", "Index")
+</div>
+<script>
+    $(document).ready(function () {
+        //$(function () {
+        //    $("#Date").datepicker();
+
+        //});
+        $('#imgid').on('change', function () {
+            alert("add image");
+            readURL(this);
+        });
+        function Clear() {
+            var img = "/Photos/add.png";
+            $('#imgsrc').attr('src', img);
+        };
+        //file onload file read
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.readAsDataURL(input.files[0]);
+                reader.onload = function (e) {
+                    $('#imgsrc').attr('src', e.target.result);
+                    //alert(e.target.result);
+                    // console.log("n");
+                }
+            }
+        };
+        function SavePhoto(objt) {
+            $.each(objt, function (){
+            var data = new FormData();
+            var files = $("#imgid").get(0).files;
+            
+            if (files.length > 0) {
+
+                data.append("filea", files[0]);
+                data.append("contestantid", this.contestantid);
+
+            }
+            var url = "/Naba/SavePhoto";
+            var ajaxRequest = $.ajax({
+                type: "POST",
+                url: url,
+                contentType: false,
+                processData: false,
+                data: data,
+
+            });
+            });
+        };
+        $(document.body).on('click', '#Consav', function () {
+            alert("save image");
+            SavePhoto();
+
+        });
+
+    });
+        </script>

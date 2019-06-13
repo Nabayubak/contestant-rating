@@ -1,0 +1,118 @@
+﻿
+@model IEnumerable<Nabayubak.Models.Naba2>
+@{
+    ViewBag.Title = "ContestantDetails";
+
+}
+
+
+<h2>ContestantDetails</h2><br />
+
+<div><label>Filter</label> <input type="text" id="txtfilter" /></div><br />
+        
+<div id="empInfoDetails">
+</div>
+
+<div>
+    <table class="table table-bordered" id="tblData">
+        <thead><tr>
+    <th>@Html.DisplayNameFor(model => model.FullName)</th>
+    <th>@Html.DisplayNameFor(model => model.Gender)</th>
+    <th>@Html.DisplayNameFor(model => model.IsActive)</th>
+    <th>@Html.DisplayNameFor(model => model.Dateofbirth)</th>
+    <th>@Html.DisplayNameFor(model => model.District)</th>
+</tr></thead>
+
+       
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td> @Html.DisplayFor(ModelItem => item.FullName)</td>
+                <td>@Html.DisplayFor(modelItem => item.Gender)</td>
+                <td>@Html.DisplayFor(modelItem => item.IsActive)</td>
+                <td> @Html.DisplayFor(ModelItem => item.Dateofbirth)</td>
+                <td> @Html.DisplayFor(ModelItem => item.District)</td>
+            </tr>
+        }
+
+    </table>
+</div>
+
+
+
+<script>
+    $(document).ready(function () {
+        $("#txtfilter").keyup(function () {
+            ////$("#tblData").hide('fast'); //Hide the Table showing All Data 
+            //$('#empInfoDetails').show('fast'); //Show the <div> showing filtered Data 
+            var data = $(this).val();
+            var url = "/NabaC/List/"; //The Url to the Action  Method of the Controller 
+            var a = {}; //The Object to Send Data Back to the Controller 
+            a.Fullname = $("#txtfilter").val();
+            // Check whether the TextBox Contains text 
+            // if it does then make ajax call 
+            if ($("#txtfilter").val().length > 0 || $("#txtfilter").val() != "") { 
+                $.ajax({
+                    type: 'POST',
+                    url: url,
+                    data: a,
+                    dataType: "json", 
+                    success: function (evt) {
+                        $('#tblData tbody tr').remove();
+                        console.log(evt)
+                      
+                        $.each(evt, function () {
+                            var body = $('#tblData tbody');
+                            var tr = $('<tr id="' + this.contestantid + '"></tr>');
+                            var td1 = $('<td>' + this.FullName + '</td>');
+                            var td2 = $('<td>' + this.Gender + '</td>');
+                            var td3 = $('<td>' + this.IsActive + '</td>');
+                            var td4 = $('<td>' + this.Dateofbirth + '</td>');
+                            var td5 = $('<td>' + this.District + '</td>');
+                            tr.append(td1);
+                            tr.append(td2);
+                            tr.append(td3);
+                            tr.append(td4);
+                            tr.append(td5);
+                            body.append(tr);
+
+                        })
+                    }, 
+                }); 
+            } 
+            
+
+                    else {
+                $.ajax({
+                    type: 'post',
+                    url: "/NabaC/GetAllContestant/",
+                    data: null,
+                    dataType: "json", 
+                    success: function (evt) {
+                        $('#tblData tbody tr').remove();
+                        console.log(evt)
+
+                        $.each(evt, function () {
+                            var body = $('#tblData tbody');
+                            var tr = $('<tr id="' + this.contestantid + '"></tr>');
+                            var td1 = $('<td>' + this.FullName + '</td>');
+                            var td2 = $('<td>' + this.Gender + '</td>');
+                            var td3 = $('<td>' + this.IsActive + '</td>');
+                            var td4 = $('<td>' + this.Dateofbirth + '</td>');
+                            var td5 = $('<td>' + this.District + '</td>');
+                            tr.append(td1);
+                            tr.append(td2);
+                            tr.append(td3);
+                            tr.append(td4);
+                            tr.append(td5);
+                            body.append(tr);
+
+                        })
+                    }
+
+                    });
+            }
+        });
+    });
+   
+</script>
